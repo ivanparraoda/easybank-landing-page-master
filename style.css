@@ -1,0 +1,201 @@
+
+
+:root{
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    min-height: 100vh;
+    font-size:  1.125em;
+    background-image: url(./images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 90%;
+    text-align: center;
+    
+}
+
+h1,
+h2,
+h3{
+    color: var(--DarkBlue);
+    font-weight: 300;
+}
+
+p{
+    color: var(--GrayishBlue);
+}
+
+.grid-options{
+    background-color: var(--LightGrayishBlue);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ .button2{
+    border-radius: 20px;
+    border: none;
+    background:linear-gradient(.25turn, hsl(136, 65%, 51%) , 50%,hsl(192, 70%, 51%)) ;
+    color: var(--White);
+    padding: 15px 40px;
+}
+/* Navbar container */
+.nav-bar {
+    overflow: hidden;
+    background-color: var(--White);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Links inside the navbar */
+ 
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropbtn  {
+    border: none;
+    background-color: var(--White);
+    float: right;
+    
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .nav-bar a:hover, .dropdown:hover .dropbtn {
+    
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .hero-image img{
+      width: 100%;
+      overflow: hidden;
+     
+  }
+
+  .imagenes img{
+      overflow: hidden;
+      width: 100%;
+      border-radius: 12px;
+  }
+
+  .flex-articles{
+      margin: 30px;
+  }
+  
+  
+footer{
+    text-align: center;
+    align-items: center;
+    background-color: var(--DarkBlue);
+   
+    
+}
+
+.footer-flex a{
+    color: var(--White);
+    text-decoration: none;
+
+}
+
+.p2 li{
+    list-style: none;
+    color: var(--White);
+    
+}
+.p3 li{
+    list-style: none;
+    color: var(--White);
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url(./images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top right -90%;
+    }
+
+    .nav-bar{
+        width: 100%;
+    }
+
+    .nav-bar a, button{
+        float: right;
+    }
+
+    .nav-bar a{
+        color: var(--GrayishBlue);
+        text-decoration: none;
+    }
+
+
+    .heading-info{
+        display: flex;
+    }
+
+    .grid-options{
+        
+        width: 100%;
+        background-color: var(--LightGrayishBlue);
+        
+    }
+    .box-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+ 
+
+    .box1{
+        grid-column: 1/5;
+    }
+
+    .articles{
+        display: flex;
+    }
+}
