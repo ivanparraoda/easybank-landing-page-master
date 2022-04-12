@@ -74,7 +74,7 @@ p{
   
   /* Add a red background color to navbar links on hover */
   .nav-bar a:hover, .dropdown:hover .dropbtn {
-    
+    color: red;
   }
   
   /* Dropdown content (hidden by default) */
@@ -123,7 +123,7 @@ p{
   .flex-articles{
       margin: 30px;
   }
-  
+
   
 footer{
     text-align: center;
