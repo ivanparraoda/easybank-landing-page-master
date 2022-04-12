@@ -13,6 +13,8 @@
 body{
     font-family: 'Public Sans', sans-serif;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
     font-size:  1.125em;
     background-image: url(./images/bg-intro-mobile.svg);
     background-repeat: no-repeat;
@@ -35,8 +37,7 @@ p{
 .grid-options{
     background-color: var(--LightGrayishBlue);
     width: 100%;
-    margin: 0;
-    padding: 0;
+    
     
 }
 
@@ -47,7 +48,7 @@ p{
     color: var(--White);
     padding: 15px 40px;
 }
-/* Navbar container */
+/* Navbar container
 .nav-bar {
     overflow: hidden;
     background-color: var(--White);
@@ -55,16 +56,13 @@ p{
     padding: 0;
   }
   
-  /* Links inside the navbar */
  
-  
-  /* The dropdown container */
   .dropdown {
     float: left;
     overflow: hidden;
   }
   
-  /* Dropdown button */
+ 
   .dropbtn  {
     border: none;
     background-color: var(--White);
@@ -72,12 +70,12 @@ p{
     
   }
   
-  /* Add a red background color to navbar links on hover */
+
   .nav-bar a:hover, .dropdown:hover .dropbtn {
     color: red;
   }
   
-  /* Dropdown content (hidden by default) */
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -87,7 +85,6 @@ p{
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
     color: black;
@@ -97,25 +94,24 @@ p{
     text-align: left;
   }
   
-  /* Add a grey background color to dropdown links on hover */
+
   .dropdown-content a:hover {
     background-color: #ddd;
   }
   
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
+   */
 
   .hero-image img{
       width: 100%;
-      overflow: hidden;
+      
      
   }
 
   .imagenes img{
-      overflow: hidden;
+      
       width: 100%;
       border-radius: 12px;
   }
@@ -161,6 +157,9 @@ footer{
 
     .nav-bar{
         width: 100%;
+        background-color: var(--White);
+        position: absolute;
+        height: 60px;
     }
 
     .nav-bar a, button{
@@ -175,8 +174,15 @@ footer{
 
     .heading-info{
         display: flex;
+        gap: 4rem;
+        text-align: left;
+        
     }
+    
 
+    .hero-image{
+        order: 1;
+    }
     .grid-options{
         
         width: 100%;
@@ -186,7 +192,7 @@ footer{
     .box-grid{
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1fr 1fr;
+       
     }
 
  
@@ -195,7 +201,19 @@ footer{
         grid-column: 1/5;
     }
 
-    .articles{
+    .artc{
+      
+        display: flex;
+
+    }
+
+
+    .imagenes img{
+        width: 200px;
+        border-radius: 1px;
+    }
+
+    .footer-flex{
         display: flex;
     }
-}
+}   
